@@ -23,7 +23,7 @@ func (k Keeper) BitVMChallengeData(goCtx context.Context, req *types.QueryBitVMC
 		return nil, types.ErrInvalidProofId
 	}
 
-	chanllengeData, found := k.GetBitVMChallengeData(ctx, proofId)
+	challengeData, found := k.GetBitVMChallengeData(ctx, proofId)
 	if !found {
 		return nil, types.ErrBitVMChallengeDataNotFound
 	}
