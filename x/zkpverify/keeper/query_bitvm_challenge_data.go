@@ -28,5 +28,5 @@ func (k Keeper) BitVMChallengeData(goCtx context.Context, req *types.QueryBitVMC
 		return nil, types.ErrBitVMChallengeDataNotFound
 	}
 
-	return &types.QueryBitVMChallengeDataResponse{BitvmChallengeData: &chanllengeData}, nil
+	return &types.QueryBitVMChallengeDataResponse{BitvmChallengeData: &challengeData}, nil
 }
